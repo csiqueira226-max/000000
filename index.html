@@ -1,34 +1,194 @@
-<style>
-  /* Aqui é só a decoração da página */
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-<!-- Aqui é o que aparece na tela -->
-<div style="text-align: center; padding: 20px;">
-    <h1 style="color: #d4af37;">Meliponário Cambará</h1>
-    
-    <p style="color: #d4af37; font-weight: bold;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meliponário Cambará - Produtos Para Abelhas Sem Ferrão</title>
+    <meta name="description" content="Especializado na criação de abelhas sem ferrão, o Meliponário Cambará oferece produtos de alta qualidade.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #2b9348;
+            --primary-light: #55a630;
+            --primary-dark: #007f5f;
+            --secondary: #e9c46a;
+            --secondary-dark: #e0aa3e;
+            --bg-light: #fbfaf8;
+            --text-main: #212529;
+            --text-muted: #6c757d;
+            --white: #ffffff;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            color: var(--primary-dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Bar de Frete */
+        .frete-bar {
+            background-color: #fffbe6;
+            color: #d4af37;
+            text-align: center;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.03);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .header-left h1 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, var(--primary-dark), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            font-size: 1.4rem;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-icons a.instagram { color: #E1306C; }
+        .social-icons a.youtube { color: #FF0000; }
+
+        .social-icons a:hover {
+            transform: translateY(-3px);
+            opacity: 0.8;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Banner */
+        .banner-section {
+            padding: 20px 0;
+        }
+
+        .banner-container {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 400px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de Frete que estava no lugar errado -->
+    <div class="frete-bar">
         🚚 Envio para todo o Brasil com segurança via Superfrete
-    </p>
+    </div>
 
-    <br>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1>Meliponário Cambará</h1>
+                </div>
 
-    <!-- LINK DO INSTAGRAM -->
-    <a href="https://www.instagram.com/meliponario_cambara?igsh=ejMxeDkxbT13b29v" target="_blank" style="text-decoration: none; color: #E1306C; font-size: 20px; font-weight: bold;">
-       Click aqui para o Instagram
-    </a>
+                <div class="header-right">
+                    <div class="social-icons">
+                        <!-- Instagram com o link que você enviou -->
+                        <a href="https://www.instagram.com/meliponario_cambara?igsh=ejMxeDkxbTl3b29v" target="_blank" class="instagram" title="Siga no Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        
+                        <!-- YouTube -->
+                        <a href="https://youtube.com" target="_blank" class="youtube" title="Inscreva-se no YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Logo do Meliponário -->
+                    <img src="assets/logo.jpg" alt="Logo" class="logo-img">
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <br><br>
+    <main>
+        <section class="banner-section">
+            <div class="container">
+                <div class="banner-container">
+                    <!-- Aqui entra sua imagem de banner -->
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #666;">
+                        <h2>Seu Banner Aqui</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- LINK DO YOUTUBE -->
-    <a href="https://youtube.com" target="_blank" style="text-decoration: none; color: #FF0000; font-size: 20px; font-weight: bold;">
-       Click aqui para o YouTube
-    </a>
-</div>
+</body>
+</html>
