@@ -13,3 +13,4 @@ Basta abrir o arquivo `index.html` em qualquer navegador da web moderno.
 ## Como publicar no GitHub Pages
 Como este é um site estático (apenas HTML, CSS e imagens/scripts locais), ele é perfeito para ser hospedado gratuitamente no **GitHub Pages**. Ao enviar este repositório para o GitHub, você pode ativar o GitHub Pages nas configurações do repositório para ter o site online.
 ![image alt]([image_url](https://github.com/csiqueira226-max/000000/blob/main/joelho%20para%20ninhos%20iscas.jpeg?raw=true))
+assets
